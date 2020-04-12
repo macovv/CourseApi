@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace CourseLibrary.Models
 {
-    public class CourseForCreationDto : CourseForManipulationDto
+    public class CourseForUpdateDto : CourseForManipulationDto
     {
+        [Required]
+        public override string Description { get => base.Description ; set => base.Description = value; }
     }
 }
